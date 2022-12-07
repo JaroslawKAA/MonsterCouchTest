@@ -5,7 +5,7 @@ namespace UI
 {
     public class MenuButtonsGroup : MonoBehaviour
     {
-        private List<MenuButton> group = new List<MenuButton>();
+        private readonly List<MenuButton> group = new List<MenuButton>();
 
         /// <summary>
         /// Selected button index;

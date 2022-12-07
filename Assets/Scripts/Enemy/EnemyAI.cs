@@ -1,5 +1,3 @@
-using System;
-using Player;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -23,8 +21,6 @@ namespace Enemy
         [SerializeField]
         private Rigidbody2D _rigidbody2D;
         // @formatter:on
-
-        private bool isActive = true;
 
         private Transform detectedPlayer;
 
@@ -73,7 +69,6 @@ namespace Enemy
 
         private void DisableEnemy()
         {
-            isActive = false;
             _sprite.color = new Color(1, 1, 1, .4f);
             _collider2D.enabled = false;
             _playerDetectorTrigger.enabled = false;
